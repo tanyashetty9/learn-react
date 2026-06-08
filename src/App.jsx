@@ -4,12 +4,16 @@ import { CandidateProfile } from './CandidateProfile';
 import { CardWrapper } from './CardWrapper';
 import { Hello, HelloWithoutJSX } from './Hello';
 import { Product } from './Product';
+import { ProductList } from './ProductList';
 import { UserDetails } from './UserDetails';
 import { Welcome } from './Welcome';
 
 function App() {
   return (
     <div>
+      {/* Rendering Lists */}
+      <ProductList />
+
       {/* conditional rendering */}
       <UserDetails name="bruce" isOnline={true} />
       <UserDetails name="clark" isOnline={false} />
